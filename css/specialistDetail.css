@@ -1,0 +1,76 @@
+.main{
+    background:#FFFFFF;
+}
+/*---------------专家详情---------------------*/
+.user-info{
+    position: relative;
+    background:#808080 ;
+    height: 1.2rem;
+    color: #FFFFFF;
+    padding: 10px;
+}
+.user-info img{
+    width: 0.7rem;
+    height: 0.7rem;
+}
+.user-info figure{
+    display: -webkit-flex;
+}
+.tel{
+    width: 0.4rem;
+    height: 0.4rem;
+    background: #CC0000;
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 0.4rem;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.user-info figcaption{
+    padding: 10px;
+
+}
+.user-info figcaption p{
+    font-size: 14px;
+    color:#CCCCCC;
+}
+.jianjie{
+    padding: 10px;
+ }
+.jianjie .tit{
+    font-size:14px ;
+}
+.jianjie p{
+    font-size: 12px;
+    text-indent: 2em;
+    line-height: 26px;
+}
+
+/*------------专家大全------------*/
+.specialist_sort_list{
+    margin:15px;
+    border:1px solid #eeeeee;
+    border-bottom: 0;
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+.specialist_sort_list li{
+    height: 0.46rem;
+    line-height: 0.46rem;
+    border-bottom: 1px solid #eeeeee;
+}
+.specialist_sort_list a{
+    display: block;
+    text-indent: 10px;
+    color: #333333;
+    font-size: 14px;
+    position: relative;
+}
+.specialist_sort_list i{
+    position: absolute;
+    right: 10px;
+    line-height: 0.46rem;
+}

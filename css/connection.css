@@ -1,0 +1,50 @@
+.container {
+  position: relative;
+}
+
+.letters {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 20px;
+  font-size: 14px;
+}
+.letters a {
+  display: block;
+}
+
+.sort_by_letter h3 {
+  background: #E6E6E6;
+  height: 0.26rem;
+  line-height: 0.26rem;
+}
+
+.persons a {
+  display: -webkit-flex;
+  height: 0.8rem;
+  padding: 0.05rem 10px;
+  color: #333333;
+}
+.persons a:not(:nth-last-of-type(1)) {
+  border-bottom: 1px solid #ccc;
+}
+.persons img {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.persons span {
+  -webkit-flex: 1;
+  line-height: 0.8rem;
+}
+
+.level0 {
+  color: #CCCCCC;
+}
+
+.level1 {
+  color: #ff0000;
+}
+
+/*# sourceMappingURL=connection.css.map */

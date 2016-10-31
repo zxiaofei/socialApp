@@ -1,0 +1,84 @@
+
+.nav {
+    display: -webkit-flex;
+    height:0.3rem;
+    line-height:0.3rem;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+}
+.nav a {
+    color: #333;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+    z-index: 1;
+}
+
+.nav span {
+    -webkit-transition: background 1s;
+    border-bottom: 2px solid red;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.scroller-wrapper {
+    position: relative;
+    width: 100%;
+    -webkit-flex: 1;
+    overflow: hidden;
+}
+.supply_item{
+    position: relative;
+    margin-top:10px;
+    background: #fff;
+    padding:10px;
+}
+.supply_item a{
+    display: -webkit-flex;
+    -webkit-justify-content:space-between;
+    -webkit-align-items:center;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.supply_item a:nth-of-type(1) img{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.supply_item div{
+    color: #999;
+    display: -webkit-flex;
+    -webkit-justify-content:space-between;
+    font-size: 14px;
+}
+
+.icon-vip1{
+    font-size:16px;
+    color: #999999;
+}
+.icon-uniE917{
+    color: deeppink;
+}
+.supply_btn{
+    position: fixed;
+    bottom: 0.1rem;
+    right: .05rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    background-color: #0C0;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 9;
+    font-size: 30px;
+    color:#ffffff;
+}

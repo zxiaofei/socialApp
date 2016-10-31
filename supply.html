@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <!-- 禁止ios设备将数字作为拨号连接，邮箱自动发送，点击地图跳转 -->
+    <meta name="format-detection" content="telephone=no,email=no,address=no">
+    <!-- 强制全屏显示 -->
+    <meta name="full-screen" content="yes">
+    <!-- 开启对webapp的支持 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- web app 应用下状态条（屏幕顶部条）的颜色,默认值为 default（白色） -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>供求信息</title>
+    <link href="fonts/iconfont.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/supply.css"/>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <a href="index.html" class="return"><i class="icon-16"></i></a>
+        <h1>供求市场</h1>
+    </header>
+    <main class="main">
+        <nav class="nav">
+            <a href="#" class="on">供应市场</a>
+            <a href="#">求购市场</a>
+            <span></span>
+        </nav>
+        <div id="scroller-wrapper" class="scroller-wrapper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="supply_item">
+                            <a href="#">
+                                <span><img src="images/ts1.jpg" alt=""/><strong>安琪拉 <i class="icon-vip1"
+                                        ></i><em class="icon-uniE917"></em></strong></span>
+                                <time>05-03 17:00</time>
+                            </a>
+                            <p>
+                                <a href="#">本公司有10吨新鲜黑美人西瓜出售，产库在佛山南海区狮山镇，需要的朋友请联系我。</a>
+                            </p>
+                            <div><span class="icon-uniE930 zan">30</span><span><i>154</i>浏览 <i>18</i>评论 </span></div>
+                        </div>
+                        <div class="supply_item">
+                            <a href="#">
+                                <span><img src="images/ts1.jpg" alt=""/><strong>安琪拉 <i class="icon-vip1"
+                                        ></i><em class="icon-uniE917"></em></strong></span>
+                                <time>05-03 17:00</time>
+                            </a>
+                            <p>
+                                <a href="#">本公司有10吨新鲜黑美人西瓜出售，产库在佛山南海区狮山镇，需要的朋友请联系我。</a>
+                            </p>
+                            <div><span class="icon-uniE930 zan">30</span><span><i>154</i>浏览 <i>18</i>评论 </span></div>
+                        </div>
+                        <div class="supply_item">
+                            <a href="#">
+                                <span><img src="images/ts1.jpg" alt=""/><strong>安琪拉 <i class="icon-vip1"
+                                        ></i><em class="icon-uniE917"></em></strong></span>
+                                <time>05-03 17:00</time>
+                            </a>
+                            <p>
+                                <a href="#">本公司有10吨新鲜黑美人西瓜出售，产库在佛山南海区狮山镇，需要的朋友请联系我。</a>
+                            </p>
+                            <div><span class="icon-uniE930 zan">30</span><span><i>154</i>浏览 <i>18</i>评论 </span></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="supply_item">
+                            <a href="#">
+                                <span><img src="images/ts1.jpg" alt=""/><strong>安琪拉 <i class="icon-vip1"
+                                        ></i><em class="icon-uniE917"></em></strong></span>
+                                <time>05-03 17:00</time>
+                            </a>
+                            <p>
+                                <a href="#">本公司有10吨新鲜黑美人西瓜出售，产库在佛山南海区狮山镇，需要的朋友请联系我。</a>
+                            </p>
+                            <div><span class="icon-uniE930 zan">30</span><span><i>154</i>浏览 <i>18</i>评论 </span></div>
+                        </div>
+                        <div class="supply_item">
+                            <a href="#">
+                                <span><img src="images/ts1.jpg" alt=""/><strong>安琪拉 <i class="icon-vip1"
+                                        ></i><em class="icon-uniE917"></em></strong></span>
+                                <time>05-03 17:00</time>
+                            </a>
+                            <p>
+                                <a href="#">本公司有10吨新鲜黑美人西瓜出售，产库在佛山南海区狮山镇，需要的朋友请联系我。</a>
+                            </p>
+                            <div><span class="icon-uniE930 zan">30</span><span><i>154</i>浏览 <i>18</i>评论 </span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<a href="addpurinfo.html" class="supply_btn icon-uniE93E"></a>
+<script src="js/zepto.min.js"></script>
+<script src="js/swiper-3.3.1.jquery.min.js"></script>
+<script src="js/iscroll-probe.js"></script>
+<script>
+    (function ($) {
+        var mySwiper=new Swiper('.swiper-container',{
+            onSlideChangeEnd: function(swiper){
+                var curIdx=mySwiper.activeIndex;
+                $('.nav').find('a').eq(curIdx).addClass('on').siblings().removeClass('on');
+                $('.nav').find('span').css('left',curIdx*50+'%');
+            }
+        });
+        $('.nav').on('tap','a',function(){
+            var idx=$(this).index();
+            $(this).addClass('on').siblings().removeClass('on');
+            $('.nav').find('span').css('left',idx*50+'%');
+            mySwiper.slideTo(idx,700,false)
+        });
+        var sc=new IScroll('#scroller-wrapper',{'click':true})
+    })(Zepto);
+</script>
+</body>
+</html>

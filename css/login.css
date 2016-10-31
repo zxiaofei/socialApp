@@ -1,0 +1,66 @@
+.head-login{
+    padding:0.5rem 0;
+}
+.head-login .logo{
+    width: 1rem;
+    height: 1rem;
+    margin:auto;
+}
+.head-login img{
+    width: 100%;
+}
+.head-login p{
+    font-size: 20px;
+    text-align: center;
+    color:#EA5747;
+}
+.input-group{
+    padding:20px;
+}
+.input-row{
+    height: 0.4rem;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.input-row label{
+    position: absolute;
+    top:0;
+    line-height: 0.38rem;
+}
+.input-row input{
+    border:none;
+    width:100% ;
+    padding-left:20px;
+    outline: none;
+    height: 0.38rem;
+    font-family: "微软雅黑";
+}
+.btn{
+    width: 100%;
+    height: 0.45rem;
+    border: 0;
+    border-radius: 4px;
+    font-family: "微软雅黑";
+}
+.cy-btn{
+    margin-top:15px;
+}
+.btn-red{
+    background:#E84219 ;
+    color: #ffffff;
+    font-size: 16px;
+}
+.btn-green{
+    background:#00CC00 ;
+    color: #ffffff;
+    font-size: 16px;
+}
+.login-reg{
+    font-size: 14px;
+    padding:0  20px;
+    display: -webkit-flex;
+    -webkit-justify-content:space-between;
+}
+.reg-right{
+    color: #ff0000;
+}
